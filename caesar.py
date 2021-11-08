@@ -3,10 +3,6 @@
 from classes.CAESAR import CAESAR
 from sys import stdin
 
-'''
-    Reads a CAESAR cipher from the stdin and bruteforces it against the default alphabeth
-'''
-
 
 print("Please select the mode:")
 print("encrypt (e)")

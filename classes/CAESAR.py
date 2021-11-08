@@ -31,11 +31,21 @@ class CAESAR:
     def getKey(self):
         return self.__key
 
+    def encrypt(self):
+        cipher = ""
+        for c in self.__text:
+            if c in self.__alphabeth:
+                i = (self.__alphabeth.index(c) + self.__key) % len(self.__alphabeth)
+                c = self.__alphabeth[i]
+            cipher += c
+        return cipher
+
     def decrypt(self):
-        self.__text = ""
+        text = ""
 
         for c in self.__cipher:
             if c in self.__alphabeth:
                 i = (self.__alphabeth.index(c) - self.__key) % len(self.__alphabeth)
                 c = self.__alphabeth[i]
-            self.__text += c
+            text += c
+        return text
