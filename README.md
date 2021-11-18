@@ -14,6 +14,8 @@ CryptAna is a tool to support crypto analysis and penetration testing on known o
  - Masc
  - Transmat
  - ALBC-2
+ - Stream
+ - Autokey
 
 ## Other Methods
  - Base conversion
