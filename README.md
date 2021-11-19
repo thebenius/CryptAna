@@ -16,16 +16,20 @@ CryptAna is a tool to support crypto analysis and penetration testing on known o
  - ALBC-2
  - Stream
  - Autokey
+ - Playfair
 
 ## Planned ciphers (so far)
  - Transspa
  - ALBC-K (ECB)
  - ALBC-K (CBC)
- - Playfair
  - homophonic substitution
  - Grille cypher
  - ADFGVX
  - RSA
+
+## Planned for fun
+ - Playfair WW2 version
+ - Enigma
 
 ## Other Methods
  - Base conversion

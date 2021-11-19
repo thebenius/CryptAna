@@ -16,9 +16,9 @@ class Analyser:
         Returns all occuring (ascii) letters and their number of occurances in the text
         sorted by descending frequency
     '''
-    def getLetters(self):
+    def getLetters(self,length=1):
         result = {}
-        for i in self.__text:
+        for i in [self.__text[i:i+length] for i in range(0, len(self.__text)-length)]:
             if i not in result:
                 result[i] = 0
                 
@@ -70,3 +70,4 @@ class Analyser:
                     
                 result[d] += 1
         return sorted(result.items(), key=lambda item: item[1],reverse=True)
+
