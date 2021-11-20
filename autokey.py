@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from classes.AUTOKEY import AUTOKEY
+from ciphers.AUTOKEY import AUTOKEY
 from sys import stdin
 
 

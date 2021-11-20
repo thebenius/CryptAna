@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-from classes.VIGENERE import VIGENERE
-from classes.Analyser import Analyser
+from ciphers.VIGENERE import VIGENERE
+from tools.Analyser import Analyser
 from sys import stdin
 
 

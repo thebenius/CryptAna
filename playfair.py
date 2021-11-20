@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
-from classes.PLAYFAIR import PLAYFAIR
-from classes.Analyser import Analyser
+from ciphers.PLAYFAIR import PLAYFAIR
+from tools.Analyser import Analyser
 from sys import stdin
 
 
@@ -40,6 +40,9 @@ for line in stdin:
     text += line
 
 
+'''
+  this mode is not supported yet. and highly experimental
+'''
 if (mode == 'r'):
     playfair.setCipher(text)
     analyzer = Analyser()

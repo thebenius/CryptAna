@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from classes.Base import *
+from tools.Base import *
 
 num1 = Base16()
 num2 = Base64("LrfAN")
