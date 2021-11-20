@@ -27,12 +27,16 @@ CryptAna is a tool to support crypto analysis and penetration testing on known o
  - ADFGVX
  - RSA
 
+ ## Planned ciphers
+  - Playfair Matrix reconstruction
+
 ## Planned for fun
  - Playfair WW2 version
  - Enigma
 
-## Other Methods
+## Tools
  - Base conversion
+ - Analyzer
 
 ## Bugs
 CryptAna is a tool designed to support a hacker. It is neither designed to be unbreakable nor always 100% accurate. It is the users duty to interprete the output.
