@@ -71,3 +71,16 @@ class Analyser:
                 result[d] += 1
         return sorted(result.items(), key=lambda item: item[1],reverse=True)
 
+    def euclidGCD(self,a,b):
+        a=[a,b]
+        way = []
+        while a[-1]>0:
+            step = []
+            a.append(a[-2]%a[-1])
+
+            step.append(a[-3])
+            step.append(a[-3]//a[-2])
+            step.append(a[-2])
+            step.append(a[-1])
+            way.append(step)
+        return way

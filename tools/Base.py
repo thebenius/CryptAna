@@ -9,7 +9,7 @@ class Base:
     __number = "0"
     _casing = False
 
-    def __init__(self, digits, num="0"):
+    def __init__(self, digits="0123456789ABCDEF", num="0"):
         self.__digits = digits
         self.__number = num
 
@@ -32,14 +32,14 @@ class Base:
         self.__number = number
 
 
-    def getDecimal(self):
+    def getInt(self):
         result = 0
         for digit in self.__number:
             result *= self.getBase()
             result += self.index(digit)
         return result
 
-    def setDecimal(self, number):
+    def setInt(self, number):
         result = ""
         while number != 0:
             result = self.getDigit(number%self.getBase()) + result
